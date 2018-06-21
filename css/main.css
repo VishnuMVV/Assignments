@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow: visible;
+}
+
+.container_12 {
+  background: rgb(208, 219, 208);
+  
+}
+
+nav {
+  padding-top: 2%;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px;
+}
+
+header {
+  color: whitesmoke;
+  background: rgb(54, 30, 54);
+  position: fixed;
+  border-bottom-color: rgb(87, 82, 82);
+  box-sizing: border-box;
+}
+
+ul a:hover{
+  text-decoration: underline;
+  color: orange;
+  font-size:20px;
+}
+
+.hero {
+  padding-top: 75px;
+  background: rgb(97, 206, 214);
+}
+
+.techno,.digi,.dsgn,.oper,.proser,.appser {
+  font-size: 30;
+  font-family: Arial, Helvetica;
+}
+
+.threetwo {
+  float: left;
+}
+
+.row {
+  margin: 0;
+  height:280px;
+  box-sizing: border-box;
+}
+section {
+  background: aqua;
+  border: 1px solid red;
+  box-sizing: border-box;
+  height: 190px;
+}
+.one,.two,.three {
+  padding: 1px;
+}
+
+.operations,article {
+  margin: 0;
+  text-align: justify;
+}
+.footer {
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: orange;
+}
+
+.grid_4	
+{
+margin: 0px 0px 5px 10px;	
+height:600px;	
+}
+
