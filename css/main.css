@@ -4,30 +4,34 @@ body {
 }
 
 .container_12 {
-  background: rgb(208, 219, 208);
-  
+  background: rgb(208, 219, 208); 
 }
 
 nav {
-  padding-top: 2%;
+  padding-top: 1%;
   margin-top: 5px;
-  margin-bottom: 2px;
 }
 
 nav li{
     display: inline-block;
     padding: 0px;
     text-decoration: none;
+
 }
 
 header {
   color: whitesmoke;
-  background: rgb(54, 30, 54);
+  width: 100%;
   position: fixed;
-  border-bottom-color: rgb(87, 82, 82);
+  background: rgb(144, 79, 146);
+  border-bottom-color: rgb(27, 37, 33);
   box-sizing: border-box;
 }
 
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
 ul a:hover{
   text-decoration: underline;
   color: orange;
@@ -35,8 +39,14 @@ ul a:hover{
 }
 
 .hero {
-  padding-top: 75px;
-  background: rgb(97, 206, 214);
+  padding-top: 100px;
+  height: 350px;
+  background-image: url("pwc.jpg");
+}
+
+.threeone,.threetwo {
+margin: 0px 0px 5px 10px;	
+height:600px;	
 }
 
 .techno,.digi,.dsgn,.oper,.proser,.appser {
@@ -48,18 +58,7 @@ ul a:hover{
   float: left;
 }
 
-.row {
-  margin: 0;
-  height:280px;
-  border: 2px solid whitesmoke;
-  box-sizing: border-box;
-}
-section {
-  background: aqua;
-  border: 1px solid red;
-  box-sizing: border-box;
-  height: 190px;
-}
+
 .one,.two,.three {
   padding: 1px;
 }
@@ -68,16 +67,53 @@ section {
   margin: 0;
   text-align: justify;
 }
-.footer {
-  clear: both;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background: orange;
+
+.fourone {
+  margin: 0px 0px 5px 1px;	
+  height:150px;	
 }
 
-.grid_4	
-{
-margin: 0px 0px 5px 10px;	
-height:600px;	
+.fourtwo {
+  float: left;
+}
+.footer {
+  clear: both;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: rgb(144, 79, 146);
+}
+
+.fa {
+  float: right;
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+
+.foot-f {
+  margin-left: 1%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
 }
 
