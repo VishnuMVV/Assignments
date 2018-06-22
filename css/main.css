@@ -43,15 +43,14 @@ ul a:hover {
   padding-top: 80px;
   padding-bottom: 30px;
   height: 350px;
+  background-image: url("../img/slide2.jpg");
   background-color: #3b5998;
-  background-image: url("slide3.png");
 }
 
 .threeone,
 .threetwo,
 .threethree {
   margin: 0px 0px 5px 10px;
-  height: 300px;
 }
 
 .techno,
@@ -61,6 +60,7 @@ ul a:hover {
 .fourtwo {
   font-size: 30;
   font-family: Arial, Helvetica;
+  padding: 0px 2px 0px 2px;
 }
 
 .threethree {
