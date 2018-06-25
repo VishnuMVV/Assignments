@@ -1,122 +1,121 @@
 body {
-  font-family: "Roboto Condensed", sans-serif;
-  overflow: visible;
-}
-
-.container_12 {
-  background: rgb(208, 219, 208);
-}
-
-nav {
-  padding-top: 1%;
-  margin-top: 5px;
-  margin-left: 20%;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0px;
-  text-decoration: none;
-}
-
-.header {
-  color: whitesmoke;
-  width: 100%;
-  position: fixed;
-  padding-left: 10%;
-  background: rgb(144, 79, 146);
-  border-bottom-color: rgb(27, 37, 33);
-  box-sizing: border-box;
-}
-
-a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-ul a:hover {
-  text-decoration: underline;
-  color: orange;
-  font-size: 20px;
-}
-
-.hero {
-  padding-top: 80px;
-  padding-bottom: 30px;
-  height: 350px;
-  background-image: url("../img/slide2.jpg");
-  background-color: #3b5998;
-}
-
-.threeone,
-.threetwo,
-.threethree {
-  margin: 0px 0px 5px 10px;
-}
-
-.techno,
-.dsgn,
-.proser,
-.fourone,
-.fourtwo {
-  font-size: 30;
-  font-family: Arial, Helvetica;
-  padding: 0px 2px 0px 2px;
-}
-
-.threethree {
-  float: left;
-}
-
-article {
-  margin: 0;
-  text-align: justify;
-}
-
-.fourone {
-  margin: 0px 0px 5px 1px;
-  height: 250px;
-}
-
-.fourtwo {
-  float: left;
-}
-.footer {
-  clear: both;
-  width: 100%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background: rgb(144, 79, 146);
-}
-
-.fa {
-  float: right;
-  padding: 10px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-  border-radius: 50%;
-}
-
-.foot-f {
-  margin-left: 1%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3b5998;
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: visible;
+  }
+  
+  .container_12 {
+    background: rgb(208, 219, 208);
+  }
+  
+  nav {
+    padding-top: 1%;
+    margin-top: 5px;
+    margin-left: 20%;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  .header {
+    color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    padding-left: 10%;
+    background: rgb(144, 79, 146);
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  ul a:hover {
+    text-decoration: underline;
+    color: orange;
+    font-size: 20px;
+  }
+  
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    height: 350px;
+    background-image: url("../img/slide2.jpg");
+    background-color: #3b5998;
+  }
+  
+  .threeone,
+  .threetwo,
+  .threethree {
+    margin: 0px 0px 5px 10px;
+  }
+  
+  .techno,
+  .dsgn,
+  .proser,
+  .fourone,
+  .fourtwo {
+    font-size: 30;
+    font-family: Arial, Helvetica;
+    padding: 0px 2px 0px 2px;
+  }
+  
+  .threethree {
+    float: left;
+  }
+  
+  article {
+    margin: 0;
+    text-align: justify;
+  }
+  
+  .fourone {
+    margin: 0px 0px 5px 1px;
+    height: 250px;
+  }
+  
+  .fourtwo {
+    float: left;
+  }
+  .footer {
+    clear: both;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: rgb(144, 79, 146);
+  }
+  
+  .fa {
+    float: right;
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 50%;
+  }
+  
+  .foot-f {
+    margin-left: 1%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3b5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55acee;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
   color: white;
-}
-
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
+  }
