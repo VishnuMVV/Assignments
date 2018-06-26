@@ -1,22 +1,11 @@
-.jumbotron {
-    margin-bottom: 0;
-}  
-.main-tag {
-    margin-left: 15%;
+.more {
+    color: rgb(248, 117, 29);
 }
-h1 {
-    color: rgb(226, 214, 214);
-    width: 100px;
+.name {
+    color: whitesmoke;
+    width: 50px;
     font-size: 40px;
     font-weight: bold;
-    transform-origin: center;
-}
-  
-h1:hover {
-    animation-name: rotate;
-    animation-duration: 0.6s;
-    animation-timing-function: linear;
-    animation-iteration-count: 5;
 }
 
 .carousel-inner img {
@@ -24,27 +13,11 @@ h1:hover {
     height: 100%;
 }
 
-.first-body {
-    margin-top: 1%;
-}
 .row {
     text-align: justify;
 }
-footer {
-    background-color: rgb(6, 23, 37);
-    margin-top: 5%;
-    padding-top: 1%;
+
+footer,
+a {
+    color: whitesmoke
 }
-.foot-logo,
-.copy {
-    color: blue;
-}
-.fa {
-    float: left;
-    padding: 0px 30px;
-    font-size: 30px;
-    width: 20px;
-    text-decoration: none;
-    margin: 0px 10px;
-    border-radius: 50%;
-  }
