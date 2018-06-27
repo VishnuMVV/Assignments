@@ -10,7 +10,6 @@
   <meta name="keywords" content="software services, software companies, companies, software, development, project, code, software development">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -34,44 +33,46 @@
 
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link  text-white" href="#home">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="html/industries.html" id="navbardrop" data-toggle="dropdown">Industries</a>
+          <a class="nav-link  text-white" href="html/industries.html" id="navbardrop" data-toggle="dropdown">Industries</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Automotive</a>
-            <a class="dropdown-item" href="#">Banking</a>
-            <a class="dropdown-item" href="#">Public Service</a>
-            <a class="dropdown-item" href="#">Health</a>
+            <a class="dropdown-item" href="html/industries.html">Automotive</a>
+            <a class="dropdown-item" href="html/industries.html">Banking</a>
+            <a class="dropdown-item" href="html/industries.html">Public Service</a>
+            <a class="dropdown-item" href="html/industries.html">Health</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="html/services.html" id="navbardrop" data-toggle="dropdown">Services</a>
+          <a class="nav-link  text-white" href="html/services.html" id="navbardrop" data-toggle="dropdown">Services</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Cloud Services</a>
-            <a class="dropdown-item" href="#">Digital Services</a>
-            <a class="dropdown-item" href="#">Business Operations</a>
+            <a class="dropdown-item" href="html/services.html">Cloud Services</a>
+            <a class="dropdown-item" href="html/services.html">Digital Services</a>
+            <a class="dropdown-item" href="html/services.html">Business Operations</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="html/careers.html">Careers</a>
+          <a class="nav-link text-white" href="html/careers.html">Careers</a>
         </li>
         <form class="form-inline" action="/action_page.php">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-success mr-4" type="submit">Search</button>
         </form>
-        <li class="nav-item outline-success my-2 my-sm-0 pt-2 mr-0"><a href="html/login.html">Login</a></li>
+        <li class="nav-item outline-success my-2 my-sm-0 pt-2 mr-0">
+          <a href="html/login.html">Login</a>
+        </li>
       </ul>
     </div>
   </nav>
-  <div id="demo" class="carousel slide px-2 mt-2 pt-1" data-ride="carousel">
+  <div id="slider" class="carousel slide px-2 mt-5 pt-5" data-ride="carousel">
 
     <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
     </ul>
 
     <!-- The slideshow -->
@@ -100,10 +101,10 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <a class="carousel-control-prev" href="#slider" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
+    <a class="carousel-control-next" href="#slider" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
@@ -120,7 +121,7 @@
           IoT, Machine Learning, Microservices...</p>
         <p>
           <a href="html/services.html">
-            <strong class="more">Learn more<i class="material-icons">&#xe31c;</i></strong>
+            <strong class="more">Learn more</strong>
           </a>
 
         </p>
@@ -261,7 +262,59 @@
             <a href="html/stories.html">Employee Stories</a>
           </p>
           <p>
-            <a href="#!">Terms of Use</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#exampleModalLong">
+              Terms of Use
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Terms of Use</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body bg-secondary text-white">
+                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                    risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
+                    bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec
+                    sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet
+                    fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur
+                    ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+                    lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+                    nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                    laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                    cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                    auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                    in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+                    cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                    dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                    nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
+                    consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi
+                    leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque
+                    nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
+                    bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec
+                    sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet
+                    fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur
+                    ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+                    lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+                    nulla non metus auctor fringilla.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </p>
           <p>
             <a href="#!">Privacy Policy</a>
