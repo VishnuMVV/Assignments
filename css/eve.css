@@ -1,0 +1,11 @@
+div {
+    background-color: blue;
+    width: 10%;
+    height: 5%;
+    padding: 5%;    
+    margin: 2%;
+}
+#date {
+    float: right;
+    margin: 1px 5px ;
+}
