@@ -2,9 +2,9 @@ var promise = new Promise(function(resolve,reject){
     console.log("Inside promise executor");
     setTimeout(function(){
         console.log("in setTimeout");
-        
+        resolve('foo');
     },1000);
-    resolve('foo');
+    
 });
 console.log("created promise");
 promise.then(function(result){

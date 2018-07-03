@@ -1,4 +1,4 @@
-window.onload = function but() {
+window.onload = function() {
     var yesButton = document.getElementById("yesButton");
     var noButton = document.getElementById("noButton");
     var yesVotes = 0;
