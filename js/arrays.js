@@ -37,5 +37,5 @@ console.log(v);
 console.log(Math.min.apply(null,values));
 
 
-var z = ["a","b","c","d","e"];
-var 
+// var z = ["a","b","c","d","e"];
+// var 

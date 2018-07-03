@@ -1,5 +1,6 @@
 div {
     background-color: blue;
+    display: inline-block;
     width: 10%;
     height: 5%;
     padding: 5%;    
