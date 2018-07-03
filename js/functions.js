@@ -60,3 +60,34 @@ function add() {
     plus();    
     return count; 
 }
+
+
+// Constructor function for Person objects
+function group(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.name = function() {
+        return this.firstName + " " + this.lastName
+    };
+}
+var myFriend = new group("saketh", "Don", 22, "brown");
+var out = "My friend is " + myFriend.name(); 
+console.log(out);
+
+
+//prototype for objects
+function crew(first,last,titlee) {
+    this.firstName = first;
+    this.secondName = last;
+    this.titlee = titlee;
+}
+crew.prototype.area = "ind";
+crew.prototype.name = function(){
+     return this.firstName + " " + this.secondName;
+}
+var threw = new crew("sweety", "dolly", "X");
+console.log("name is "+threw.name());
+
+
