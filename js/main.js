@@ -1,3 +1,4 @@
+
 window.onload = checkCookies();
 function checkCookies() {
   var text = "";
@@ -48,6 +49,7 @@ function myFunction(event) {
   var x = event.bubbles;
   document.getElementById("sample1").innerHTML =
     x + " => Bubble event is active";
+    if(event.x == 2) event.stopPropagation();
 }
 
 
@@ -57,4 +59,10 @@ function insert_Row() {
   var z = x.insertCell(1);
   y.innerHTML = "New Cell1";
   z.innerHTML = "New Cell2";
+}
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
