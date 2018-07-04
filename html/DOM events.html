@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>DOM events</title>
+</head>
+
+<body>
+    <input type="button" value="Click to change para background color" onclick="set_background()">
+    <p>Stack</p>
+    <p>Route</p>
+
+    <p>
+        <a id="id1" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">Link</a>
+    </p>
+    <button onclick="getAttributes()">Click here to get the attribute's value</button>
+
+    <div>
+        <p id='text'>Hindustan</p>
+        <button onclick="js_style()">Style</button>
+    </div>
+
+    <div>
+        <form id="form1">
+            First name:
+            <input type="text" name="fname" value="stack">
+            <br> Last name:
+            <input type="text" name="lname" value="route">
+            <br>
+        </form>
+        <button onclick="getFormvalue()">Try it</button>
+        <p id="form"></p>
+    </div>
+
+    <table id="myTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+        <tr>
+            <td>Row3 cell1</td>
+            <td>Row3 cell2</td>
+        </tr>
+    </table>
+    <form>
+        <input type="button" onclick="changeContent()" value="Change content">
+    </form>
+
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+
+    <script>
+        function js_style() {
+            text.style.fontSize = "14pt";
+            text.style.fontFamily = "Comic Sans MS";
+            text.style.color = "green";
+        }
+    </script>
+    <script>
+        function changeContent() {
+            rn = window.prompt("Input the Row number(0,1,2)", "0");
+            cn = window.prompt("Input the Column number(0,1)", "0");
+            content = window.prompt("Input the Cell content");
+            var x = document.getElementById('myTable').rows[parseInt(rn, 10)].cells;
+            x[parseInt(cn, 10)].innerHTML = content;
+        }
+    </script>
+    <script>
+        function getFormvalue() {
+            var x = document.forms["form1"];
+            var text = "";
+            var i;
+            for (i = 0; i < x.length; i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("form").innerHTML = text;
+        }
+    </script>
+    <script>
+        function set_background() {
+            docBody = document.getElementsByTagName("body")[0];
+            myBodyElements = docBody.getElementsByTagName("p");
+            myp1 = myBodyElements[0];
+            myp1.style.background = "rgb(255,0,0)";
+            myp2 = myBodyElements[1];
+            myp2.style.background = "rgb(255,255,0)";
+        }
+    </script>
+    <script>
+        function getAttributes() {
+            var u = document.getElementById("id1").href;
+            alert('The value of the href attribute of the link is : ' + u);
+            var v = document.getElementById("id1").hreflang;
+            alert('The value of the hreflang attribute of the link is : ' + v);
+            var w = document.getElementById("id1").rel;
+            alert('The value of the rel attribute of the link is : ' + w);
+            var x = document.getElementById("id1").target;
+            alert('The value of the taget attribute of the link is : ' + x);
+            var y = document.getElementById("id1").type;
+            alert('The value of the type attribute of the link is : ' + y);
+        }
+    </script>
+    <script>
+        function removecolor() {
+            var x = document.getElementById("colorSelect");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</body>
+
+</html>

@@ -8,12 +8,23 @@ console.log(x.get(1));
 console.log(x.get("1"));
 console.log(x.get(objectKey));
 console.log("");
-var fromArray = new Map([[0, "array0"], [objectKey, "array1"]]);
 
+//Accessing key-value paiars in a map
+console.log("Accessing values in a map")
+var fromArray = new Map([[0, "array0"], [objectKey, "array1"]]);
 console.log(fromArray.get(0));
 console.log(fromArray.get(objectKey));
 console.log("");
 
+//cloning a map
+console.log("cloning a map")
+var original = new Map([[1, "one"]]);
+var clone = new Map(original);
+console.log(clone.get(1));
+console.log(original === clone);
+console.log("")
+//Map using a generator function
+console.log("Map using a generator function")
 var generator = function*() {
   yield [0, "generator0"];
   yield [objectKey, "generator1"];
@@ -36,6 +47,8 @@ console.log(myMap.get(keyString)); // "value associated with 'a string'"
 console.log(myMap.get(keyObj)); // "value associated with keyObj"
 console.log(myMap.get(keyFunc));
 console.log("");
+//Size of a map
+console.log("size of a map")
 var x2 = new Map([["a", "value A"], ["b", "value B"], ["c", "value C"]]);
 console.log(x.size);
 x2.set("d", "value D");
@@ -43,23 +56,27 @@ console.log(x2.size);
 x2.clear();
 console.log(x2.size);
 console.log("");
+//Map with an array
+console.log("Map with an array")
 var kvArray = [["key1", "value1"], ["key2", "value2"]];
 var myMap = new Map(kvArray);
 myMap.get("key1"); // returns "value1"
-console.log(Array.from(myMap)); 
+console.log(Array.from(myMap));
 console.log(Array.from(myMap.keys())); // Will show ["key1", "key2"]
-console.log("")
+console.log("");
+
 //For ...each loop for Map
-console.log("For each loop for Map")
-var x3 = new Map([['a', 'value A'], ['b', 'value B'], ['c', 'value C']]);
+console.log("For each loop for Map");
+var x3 = new Map([["a", "value A"], ["b", "value B"], ["c", "value C"]]);
 
 x3.forEach(function(value, key, map) {
   console.log('key: "' + key + '", value: "' + value + '"');
 });
-console.log("")
+console.log("");
+
 //For ...of loop for Map
-console.log("For of loop for Map")
-var x4 = new Map([['a', 'value A'], ['b', 'value B'], ['c', 'value C']]);
+console.log("For of loop for Map");
+var x4 = new Map([["a", "value A"], ["b", "value B"], ["c", "value C"]]);
 for (var value of x4) {
   console.log(value);
 }
